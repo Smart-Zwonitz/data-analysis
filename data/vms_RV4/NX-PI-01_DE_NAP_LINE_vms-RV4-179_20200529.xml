@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PublicationDelivery xmlns="http://www.netex.org.uk/netex" version="ntx:1.1">
+
+  <PublicationTimestamp>2020-05-29T05:30:27</PublicationTimestamp>
+
+  <ParticipantRef>DE</ParticipantRef>
+
+  <PublicationRequest>
+    <RequestTimestamp>2020-05-29T05:30:27</RequestTimestamp>
+    <topics>
+      <NetworkFrameTopic>
+        <Current/>
+        <NetworkFilterByValue>
+          <objectReferences>
+            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+            <LineRef ref="DE::Line:1984728::" version="1590723027"/>
+          </objectReferences>
+        </NetworkFilterByValue>
+      </NetworkFrameTopic>
+    </topics>
+  </PublicationRequest>
+
+  <dataObjects>
+    <CompositeFrame id="DE::CompositeFrame_EU_PI_LINE_OFFER:vms-RV4-179" version="1590723027">
+      <ValidBetween>
+        <FromDate>2019-12-15T00:00:00</FromDate>
+        <ToDate>2020-12-12T00:00:00</ToDate>
+      </ValidBetween>
+      <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+      <codespaces>
+        <Codespace id="epip_data">
+          <Xmlns>epd</Xmlns>
+          <XmlnsUrl>http://netex-cen.eu/epip_data</XmlnsUrl>
+          <Description>EPIP data</Description>
+        </Codespace>
+      </codespaces>
+      <FrameDefaults>
+        <DefaultCodespaceRef ref="epip_data"/>
+        <DefaultDataSourceRef ref="epip_data:DataSource:General"/>
+        <DefaultResponsibilitySetRef ref="DE::ResponsibilitySet:3934::" version="1590723027"/>
+        <DefaultLocale>
+          <TimeZone>Europe/Berlin</TimeZone>
+          <DefaultLanguage>GERMAN</DefaultLanguage>
+        </DefaultLocale>
+        <DefaultLocationSystem>urn:ogc:def:crs:EPSG::4326</DefaultLocationSystem>
+      </FrameDefaults>
+      <frames>
+        <ResourceFrame id="DE::ResourceFrame_EU_PI_COMMON:vms-RV4-179" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_COMMON" versionRef="1.0"/>
+          <dataSources>
+            <DataSource id="epip_data:DataSource:General" version="1590723027">
+              <Name>DE</Name>
+            </DataSource>
+          </dataSources>
+          <responsibilitySets>
+            <ResponsibilitySet id="DE::ResponsibilitySet:3934::" version="1590723027">
+              <roles>
+                <ResponsibilityRoleAssignment id="DE::ResponsibilityRoleAssignment:3934::" version="1590723027">
+                  <DataRoleType>creates</DataRoleType>
+                  <ResponsibleOrganisationRef ref="DE::Authority:189::" version="1590723027"/>
+                </ResponsibilityRoleAssignment>
+              </roles>
+            </ResponsibilitySet>
+          </responsibilitySets>
+          <organisations>
+            <Authority id="DE::Authority:189::" version="1590723027">
+              <PublicCode>vms</PublicCode>
+              <Name>vms_MittelSachsen</Name>
+              <ShortName>vms</ShortName>
+              <LegalName>vms_MittelSachsen</LegalName>
+              <ContactDetails/>
+              <OrganisationType>authority</OrganisationType>
+              <Address/>
+            </Authority>
+            <Operator id="DE::Operator:7846::" version="1590723027">
+              <PublicCode>RV4</PublicCode>
+              <Name>RV BVO Bus</Name>
+              <ShortName>RV4</ShortName>
+              <LegalName>RV BVO Bus</LegalName>
+              <ContactDetails/>
+              <OrganisationType>operator</OrganisationType>
+              <Address/>
+            </Operator>
+          </organisations>
+        </ResourceFrame>
+        <ServiceCalendarFrame id="DE::ServiceCalendarFrame_EU_PI_CALENDAR:vms-RV4-179" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_CALENDAR" versionRef="1.0"/>
+          <ServiceCalendar id="DE::ServiceCalendar:3934::" version="1590723027">
+            <FromDate>2019-12-15</FromDate>
+            <ToDate>2020-12-12</ToDate>
+            <dayTypes>
+              <DayType id="DE::DayType:18129::" version="1590723027"/>
+            </dayTypes>
+            <operatingPeriods>
+              <UicOperatingPeriod id="DE::UicOperatingPeriod:18129::" version="1590723027">
+                <FromDate>2019-12-16T00:00:00</FromDate>
+                <ToDate>2020-12-11T00:00:00</ToDate>
+                <ValidDayBits>11111000000000000000011111001111100111110011111001111100000000000000001111100111110011111001111100000000000000000000000000000011111001111000111110011111001110000111110001111001111100111110011111001111100111110011111000000000000000000000000000000000000000000001111100111110011111001111100111110011111001111100000000000000001111100111110011011001111100111110011111</ValidDayBits>
+              </UicOperatingPeriod>
+            </operatingPeriods>
+            <dayTypeAssignments>
+              <DayTypeAssignment id="DE::DayTypeAssignment:18129::" order="1" version="1590723027">
+                <OperatingPeriodRef ref="DE::UicOperatingPeriod:18129::" version="1590723027"/>
+                <DayTypeRef ref="DE::DayType:18129::" version="1590723027"/>
+                <isAvailable>true</isAvailable>
+              </DayTypeAssignment>
+            </dayTypeAssignments>
+          </ServiceCalendar>
+        </ServiceCalendarFrame>
+        <ServiceFrame id="DE::ServiceFrame_EU_PI_NETWORK:vms-RV4-179" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_NETWORK" versionRef="1.0"/>
+          <directions>
+            <Direction id="DE::Direction:1::" version="1590723027">
+              <Name>1</Name>
+              <ShortName>1</ShortName>
+            </Direction>
+          </directions>
+          <lines>
+            <Line id="DE::Line:1984728::" version="1590723027">
+              <Name>345</Name>
+              <ShortName>179</ShortName>
+              <TransportMode>bus</TransportMode>
+              <PublicCode>345</PublicCode>
+              <PrivateCode>179</PrivateCode>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <additionalOperators>
+                <OperatorRef ref="DE::Operator:7846::" version="1590723027"/>
+              </additionalOperators>
+              <allowedDirections>
+                <AllowedLineDirection id="DE::AllowedLineDirection:6866::" version="1590723027">
+                  <DirectionRef ref="DE::Direction:1::" version="1590723027"/>
+                </AllowedLineDirection>
+              </allowedDirections>
+            </Line>
+          </lines>
+          <scheduledStopPoints>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14068601_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.520048</Longitude>
+                <Latitude>50.472939</Latitude>
+              </Location>
+              <ShortName>Schönheide, Süd | 1</ShortName>
+              <PublicCode>BO</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14068901_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.525937</Longitude>
+                <Latitude>50.46154</Latitude>
+              </Location>
+              <ShortName>Schönheide, Wiesenhaus | 1</ShortName>
+              <PublicCode>BS</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14018101_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.54578</Longitude>
+                <Latitude>50.455426</Latitude>
+              </Location>
+              <ShortName>Carlsfeld, Wilzschmühle | 1</ShortName>
+              <PublicCode>BO</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14017601_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.560964</Longitude>
+                <Latitude>50.449789</Latitude>
+              </Location>
+              <ShortName>Carlsfeld, Blechhammer | 1</ShortName>
+              <PublicCode>BO</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14017501_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.574403</Longitude>
+                <Latitude>50.441111</Latitude>
+              </Location>
+              <ShortName>Carlsfeld, Altes Sägewerk | 1</ShortName>
+              <PublicCode>BS</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14018001_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.585352</Longitude>
+                <Latitude>50.43515</Latitude>
+              </Location>
+              <ShortName>Carlsfeld, Wendeschleife | 1</ShortName>
+              <PublicCode>BO</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+          </scheduledStopPoints>
+          <serviceLinks>
+            <ServiceLink id="DE::ServiceLink:1671875__1671877_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14068901_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14068601_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1671877__1671024_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14018101_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14068901_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1671024__1671017_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14017601_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14018101_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1671017__1671016_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14017501_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14017601_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1671016__1671023_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14018001_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14017501_vms_::" version="1590723027"/>
+            </ServiceLink>
+          </serviceLinks>
+          <stopAssignments>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:140969::" order="1" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14017501_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1401750000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14017501_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:140970::" order="2" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14018101_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1401810000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14018101_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:140971::" order="3" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14068601_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1406860000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14068601_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:140972::" order="4" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14068901_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1406890000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14068901_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:140973::" order="5" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14017601_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1401760000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14017601_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:140974::" order="6" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14018001_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1401800000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14018001_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+          </stopAssignments>
+          <journeyPatterns>
+            <ServiceJourneyPattern id="DE::ServiceJourneyPattern:83634863_0::" version="1590723027">
+              <RouteView id="DE::RouteView:83634863_1::">
+                <LineRef ref="DE::Line:1984728::" version="1590723027"/>
+              </RouteView>
+              <DirectionRef ref="DE::Direction:1::" version="1590723027"/>
+              <noticeAssignments>
+                <NoticeAssignment id="DE::NoticeAssignment:177183::" order="1" version="1590723027">
+                  <Notice id="DE::Notice:14700_18419::" version="1590723027">
+                    <Text lang="de">Zahl der Stehplätze : 0</Text>
+                    <PublicCode>NSTAND</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:177184::" order="2" version="1590723027">
+                  <Notice id="DE::Notice:14701_18420::" version="1590723027">
+                    <Text lang="de">Zahl der Sitzplätze : 0</Text>
+                    <PublicCode>NSEAT</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:177185::" order="3" version="1590723027">
+                  <Notice id="DE::Notice:14702_18421::" version="1590723027">
+                    <Text lang="de">Zahl der behindertengerechten Plätze : 0</Text>
+                    <PublicCode>NBEHIN</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:177186::" order="4" version="1590723027">
+                  <Notice id="DE::Notice:12676_18422::" version="1590723027">
+                    <Text lang="de">DELFI-Anreicherungs-URL : http://delfi.vvo-online.de:8080/trias/trias</Text>
+                    <PublicCode>DIPURL</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+              </noticeAssignments>
+              <pointsInSequence>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634863_1_0::" order="1" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14068601_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634863_1_1::" order="2" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14068901_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634863_1_2::" order="3" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14018101_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634863_1_3::" order="4" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14017601_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634863_1_4::" order="5" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14017501_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634863_1_5::" order="6" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14018001_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+              </pointsInSequence>
+            </ServiceJourneyPattern>
+          </journeyPatterns>
+        </ServiceFrame>
+        <SiteFrame id="DE::SiteFrame_EU_PI_STOP:vms-RV4-179" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1.0"/>
+          <topographicPlaces>
+            <TopographicPlace id="DE::TopographicPlace:79589::" version="1590723027">
+              <Name>Eibenstock</Name>
+              <IsoCode>14521170</IsoCode>
+              <Descriptor>
+                <Name>Eibenstock</Name>
+              </Descriptor>
+            </TopographicPlace>
+            <TopographicPlace id="DE::TopographicPlace:79621::" version="1590723027">
+              <Name>Schönheide</Name>
+              <IsoCode>14521540</IsoCode>
+              <Descriptor>
+                <Name>Schönheide</Name>
+              </Descriptor>
+            </TopographicPlace>
+          </topographicPlaces>
+          <stopPlaces>
+            <StopPlace id="DE::StopPlace:40175_vms::" version="1590723027">
+              <Name>Carlsfeld, Altes Sägewerk</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.57446</Longitude>
+                  <Latitude>50.441155</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Carlsfeld Altes Sägewerk</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Eibenstock Altes Sägewerk</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1401750000_vms::" version="1590723027">
+              <Name>Carlsfeld, Altes Sägewerk</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40175_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14017501_vms::" version="1590723027">
+                  <Name>Carlsfeld, Altes Sägewerk | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.574403</Longitude>
+                      <Latitude>50.441111</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40181_vms::" version="1590723027">
+              <Name>Carlsfeld, Wilzschmühle</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.545794</Longitude>
+                  <Latitude>50.455443</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Carlsfeld Wilzschmühle</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Eibenstock Wilzschmühle</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1401810000_vms::" version="1590723027">
+              <Name>Carlsfeld, Wilzschmühle</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40181_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14018101_vms::" version="1590723027">
+                  <Name>Carlsfeld, Wilzschmühle | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.54578</Longitude>
+                      <Latitude>50.455426</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40686_vms::" version="1590723027">
+              <Name>Schönheide, Süd</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.518429</Longitude>
+                  <Latitude>50.473</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Schönheide (Erzgeb) Süd</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Schönheide Süd</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79621::" version="1590723027">Schönheide</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1406860000_vms::" version="1590723027">
+              <Name>Schönheide, Süd</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79621::" version="1590723027">Schönheide</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40686_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14068601_vms::" version="1590723027">
+                  <Name>Schönheide, Süd | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.520048</Longitude>
+                      <Latitude>50.472939</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40689_vms::" version="1590723027">
+              <Name>Schönheide, Wiesenhaus</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.525937</Longitude>
+                  <Latitude>50.46154</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Schönheide (Erzgeb) Wiesenhaus</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Schönheide Wiesenhaus</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79621::" version="1590723027">Schönheide</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1406890000_vms::" version="1590723027">
+              <Name>Schönheide, Wiesenhaus</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79621::" version="1590723027">Schönheide</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40689_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14068901_vms::" version="1590723027">
+                  <Name>Schönheide, Wiesenhaus | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.525937</Longitude>
+                      <Latitude>50.46154</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40176_vms::" version="1590723027">
+              <Name>Carlsfeld, Blechhammer</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.56102</Longitude>
+                  <Latitude>50.449842</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Carlsfeld Blechhammer</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Eibenstock Blechhammer</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1401760000_vms::" version="1590723027">
+              <Name>Carlsfeld, Blechhammer</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40176_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14017601_vms::" version="1590723027">
+                  <Name>Carlsfeld, Blechhammer | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.560964</Longitude>
+                      <Latitude>50.449789</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40180_vms::" version="1590723027">
+              <Name>Carlsfeld, Wendeschleife</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.585352</Longitude>
+                  <Latitude>50.435141</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Carlsfeld Wendeschleife</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Eibenstock Wendeschleife</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1401800000_vms::" version="1590723027">
+              <Name>Carlsfeld, Wendeschleife</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79589::" version="1590723027">Eibenstock</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40180_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14018001_vms::" version="1590723027">
+                  <Name>Carlsfeld, Wendeschleife | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.585352</Longitude>
+                      <Latitude>50.43515</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+          </stopPlaces>
+        </SiteFrame>
+        <TimetableFrame id="DE::TimetableFrame_EU_PI_TIMETABLE:vms-RV4-179" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_TIMETABLE" versionRef="1.0"/>
+          <vehicleJourneys>
+            <ServiceJourney id="DE::ServiceJourney:989751748::" version="1590723027">
+              <TransportMode>bus</TransportMode>
+              <DepartureTime>06:55:00</DepartureTime>
+              <JourneyDuration>PT10M</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="DE::DayType:18129::" version="1590723027"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="DE::ServiceJourneyPattern:83634863_0::" version="1590723027"/>
+              <VehicleTypeRef ref="DE::VehicleType:2973::" version="1590723027"/>
+              <passingTimes>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4147312::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_0::" version="1590723027"/>
+                  <DepartureTime>06:55:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4147313::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_1::" version="1590723027"/>
+                  <ArrivalTime>06:57:00</ArrivalTime>
+                  <DepartureTime>06:57:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4147314::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_2::" version="1590723027"/>
+                  <ArrivalTime>06:59:00</ArrivalTime>
+                  <DepartureTime>06:59:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4147315::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_3::" version="1590723027"/>
+                  <ArrivalTime>07:01:00</ArrivalTime>
+                  <DepartureTime>07:01:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4147316::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_4::" version="1590723027"/>
+                  <ArrivalTime>07:03:00</ArrivalTime>
+                  <DepartureTime>07:03:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4147317::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634863_1_5::" version="1590723027"/>
+                  <ArrivalTime>07:05:00</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+          </vehicleJourneys>
+          <vehicleTypes>
+            <VehicleType id="DE::VehicleType:2973::" version="1590723027">
+              <Name>Bus</Name>
+            </VehicleType>
+          </vehicleTypes>
+        </TimetableFrame>
+      </frames>
+    </CompositeFrame>
+  </dataObjects>
+
+</PublicationDelivery>

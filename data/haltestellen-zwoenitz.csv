@@ -1,0 +1,38 @@
+SeqNo;Type;DHID;Parent;Name;Latitude;Longitude;MunicipalityCode;Municipality;DistrictCode;District;Condition;State;Description;Authority
+659450;S;de:14521:20036;de:14521:20036;Brünlos, Abzw nach Zwönitz;50,684232;12,80402;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659453;S;de:14521:20037;de:14521:20037;Brünlos, Am Tampel;50,684807;12,820998;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659456;S;de:14521:20038;de:14521:20038;Brünlos, Gh Waldschlößchen;50,674738;12,806248;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659459;S;de:14521:20039;de:14521:20039;Brünlos, Gemeindeverwaltung;50,685502;12,81604;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659527;S;de:14521:20091;de:14521:20091;Dorfchemnitz, Ortseingang;50,657098;12,831967;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659530;S;de:14521:20093;de:14521:20093;Dorfchemnitz, Siedlung;50,673889;12,841022;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659533;S;de:14521:20094;de:14521:20094;Dorfchemnitz, Wartehalle Thumer Str;50,66831;12,838111;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659672;S;de:14521:20170;de:14521:20170;Günsdorf, Wartehalle;50,667177;12,858512;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659724;S;de:14521:20251;de:14521:20251;Hormersdorf, Am Kieferberg;50,676981;12,879802;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659727;S;de:14521:20252;de:14521:20252;Hormersdorf, Feuerwache;50,671942;12,883826;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659730;S;de:14521:20253;de:14521:20253;Hormersdorf, Gemeindeverwaltung;50,671168;12,88618;14521710;Zwönitz;;;Served;InOrder;;VVO
+659733;S;de:14521:20254;de:14521:20254;Hormersdorf, Schieferbruch;50,681375;12,879712;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+659736;S;de:14521:20255;de:14521:20255;Hormersdorf, Weg z Jugendherberge;50,668264;12,907443;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+660392;S;de:14521:20608;de:14521:20608;Hormersdorf, Grundschule;50,670821;12,881401;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+660657;S;de:14521:40006;de:14521:40006;Zwönitz, Abzw Lenkersdorf;50,642653;12,785075;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+661758;S;de:14521:40404;de:14521:40404;Lenkersdorf, Wendeschleife;50,635389;12,77964;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662777;S;de:14521:40820;de:14521:40820;Zwönitz, Bahnhofstr;50,632125;12,802762;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662780;S;de:14521:40821;de:14521:40821;Zwönitz, Cafe Döring;50,642596;12,820702;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662783;S;de:14521:40822;de:14521:40822;Zwönitz, Dorfchemnitzer Str;50,647991;12,829092;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662786;S;de:14521:40823;de:14521:40823;Zwönitz, Gymnasium;50,633862;12,808548;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662791;S;de:14521:40824;de:14521:40824;Kühnhaide, Fleischerei Meischner;50,616948;12,801235;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662794;S;de:14521:40825;de:14521:40825;Kühnhaide, Gh Moosheide;50,600325;12,807461;14521710;Zwönitz;;;Served;InOrder;;VVO
+662797;S;de:14521:40826;de:14521:40826;Kühnhaide, Küchenmöbelwerk;50,622602;12,802403;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662800;S;de:14521:40827;de:14521:40827;Kühnhaide, Schmiede Lippold;50,626426;12,805736;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662803;S;de:14521:40828;de:14521:40828;Kühnhaide, Umspannwerk;50,625492;12,792998;14521710;Zwönitz;;;Served;InOrder;;VVO
+662805;S;de:14521:40829;de:14521:40829;Kühnhaide, Wendeschleife;50,611254;12,797741;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662807;S;de:14521:40830;de:14521:40830;Zwönitz, Markt;50,629931;12,812662;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662809;S;de:14521:40831;de:14521:40831;Zwönitz, Geyrische Str;50,622557;12,848559;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662812;S;de:14521:40832;de:14521:40832;Zwönitz, Schwimmbad;50,628478;12,824124;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662815;S;de:14521:40833;de:14521:40833;Zwönitz, Siedlung;50,649079;12,81886;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662818;S;de:14521:40834;de:14521:40834;Zwönitz, Bahnhof Ersatzhaltestelle;50,635048;12,793402;14521710;Zwönitz;;;Served;InOrder;;VVO
+662820;S;de:14521:40835;de:14521:40835;Zwönitz, Gh zur Linde;50,635936;12,815456;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662910;S;de:14521:40893;de:14521:40893;Zwönitz, Rathausstr;50,631082;12,81383;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662917;S;de:14521:40902;de:14521:40902;Zwönitz, Von-Otto-Str;50,630711;12,806401;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662963;S;de:14521:44506;de:14521:44506;Zwönitz;50,632136;12,798217;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+662970;S;de:14521:44507;de:14521:44507;Niederzwönitz;50,646174;12,822049;14521710;Zwönitz;-;-;Served;Unknown;;VVO
+663236;S;de:14521:51405;de:14521:51405;Dorfchemnitz;50,665902;12,839872;14521710;Zwönitz;-;-;Served;Unknown;;VVO

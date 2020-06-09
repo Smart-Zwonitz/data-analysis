@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PublicationDelivery xmlns="http://www.netex.org.uk/netex" version="ntx:1.1">
+
+  <PublicationTimestamp>2020-05-29T05:30:27</PublicationTimestamp>
+
+  <ParticipantRef>DE</ParticipantRef>
+
+  <PublicationRequest>
+    <RequestTimestamp>2020-05-29T05:30:27</RequestTimestamp>
+    <topics>
+      <NetworkFrameTopic>
+        <Current/>
+        <NetworkFilterByValue>
+          <objectReferences>
+            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+            <LineRef ref="DE::Line:1984754::" version="1590723027"/>
+          </objectReferences>
+        </NetworkFilterByValue>
+      </NetworkFrameTopic>
+    </topics>
+  </PublicationRequest>
+
+  <dataObjects>
+    <CompositeFrame id="DE::CompositeFrame_EU_PI_LINE_OFFER:vms-RV4-205" version="1590723027">
+      <ValidBetween>
+        <FromDate>2019-12-15T00:00:00</FromDate>
+        <ToDate>2020-12-12T00:00:00</ToDate>
+      </ValidBetween>
+      <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+      <codespaces>
+        <Codespace id="epip_data">
+          <Xmlns>epd</Xmlns>
+          <XmlnsUrl>http://netex-cen.eu/epip_data</XmlnsUrl>
+          <Description>EPIP data</Description>
+        </Codespace>
+      </codespaces>
+      <FrameDefaults>
+        <DefaultCodespaceRef ref="epip_data"/>
+        <DefaultDataSourceRef ref="epip_data:DataSource:General"/>
+        <DefaultResponsibilitySetRef ref="DE::ResponsibilitySet:4008::" version="1590723027"/>
+        <DefaultLocale>
+          <TimeZone>Europe/Berlin</TimeZone>
+          <DefaultLanguage>GERMAN</DefaultLanguage>
+        </DefaultLocale>
+        <DefaultLocationSystem>urn:ogc:def:crs:EPSG::4326</DefaultLocationSystem>
+      </FrameDefaults>
+      <frames>
+        <ResourceFrame id="DE::ResourceFrame_EU_PI_COMMON:vms-RV4-205" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_COMMON" versionRef="1.0"/>
+          <dataSources>
+            <DataSource id="epip_data:DataSource:General" version="1590723027">
+              <Name>DE</Name>
+            </DataSource>
+          </dataSources>
+          <responsibilitySets>
+            <ResponsibilitySet id="DE::ResponsibilitySet:4008::" version="1590723027">
+              <roles>
+                <ResponsibilityRoleAssignment id="DE::ResponsibilityRoleAssignment:4008::" version="1590723027">
+                  <DataRoleType>creates</DataRoleType>
+                  <ResponsibleOrganisationRef ref="DE::Authority:189::" version="1590723027"/>
+                </ResponsibilityRoleAssignment>
+              </roles>
+            </ResponsibilitySet>
+          </responsibilitySets>
+          <organisations>
+            <Authority id="DE::Authority:189::" version="1590723027">
+              <PublicCode>vms</PublicCode>
+              <Name>vms_MittelSachsen</Name>
+              <ShortName>vms</ShortName>
+              <LegalName>vms_MittelSachsen</LegalName>
+              <ContactDetails/>
+              <OrganisationType>authority</OrganisationType>
+              <Address/>
+            </Authority>
+            <Operator id="DE::Operator:7846::" version="1590723027">
+              <PublicCode>RV4</PublicCode>
+              <Name>RV BVO Bus</Name>
+              <ShortName>RV4</ShortName>
+              <LegalName>RV BVO Bus</LegalName>
+              <ContactDetails/>
+              <OrganisationType>operator</OrganisationType>
+              <Address/>
+            </Operator>
+          </organisations>
+        </ResourceFrame>
+        <ServiceCalendarFrame id="DE::ServiceCalendarFrame_EU_PI_CALENDAR:vms-RV4-205" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_CALENDAR" versionRef="1.0"/>
+          <ServiceCalendar id="DE::ServiceCalendar:4008::" version="1590723027">
+            <FromDate>2019-12-15</FromDate>
+            <ToDate>2020-12-12</ToDate>
+            <dayTypes>
+              <DayType id="DE::DayType:18695::" version="1590723027"/>
+            </dayTypes>
+            <operatingPeriods>
+              <UicOperatingPeriod id="DE::UicOperatingPeriod:18695::" version="1590723027">
+                <FromDate>2019-12-16T00:00:00</FromDate>
+                <ToDate>2020-12-11T00:00:00</ToDate>
+                <ValidDayBits>11111000000000000000011111001111100111110011111001111100000000000000001111100111110011111001111100000000000000000000000000000011111001111000111110011111001110000111110001111001111100111110011111001111100111110011111000000000000000000000000000000000000000000001111100111110011111001111100111110011111001111100000000000000001111100111110011011001111100111110011111</ValidDayBits>
+              </UicOperatingPeriod>
+            </operatingPeriods>
+            <dayTypeAssignments>
+              <DayTypeAssignment id="DE::DayTypeAssignment:18695::" order="1" version="1590723027">
+                <OperatingPeriodRef ref="DE::UicOperatingPeriod:18695::" version="1590723027"/>
+                <DayTypeRef ref="DE::DayType:18695::" version="1590723027"/>
+                <isAvailable>true</isAvailable>
+              </DayTypeAssignment>
+            </dayTypeAssignments>
+          </ServiceCalendar>
+        </ServiceCalendarFrame>
+        <ServiceFrame id="DE::ServiceFrame_EU_PI_NETWORK:vms-RV4-205" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_NETWORK" versionRef="1.0"/>
+          <directions>
+            <Direction id="DE::Direction:1::" version="1590723027">
+              <Name>1</Name>
+              <ShortName>1</ShortName>
+            </Direction>
+            <Direction id="DE::Direction:2::" version="1590723027">
+              <Name>2</Name>
+              <ShortName>2</ShortName>
+            </Direction>
+          </directions>
+          <lines>
+            <Line id="DE::Line:1984754::" version="1590723027">
+              <Name>377</Name>
+              <ShortName>205</ShortName>
+              <TransportMode>bus</TransportMode>
+              <PublicCode>377</PublicCode>
+              <PrivateCode>205</PrivateCode>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <additionalOperators>
+                <OperatorRef ref="DE::Operator:7846::" version="1590723027"/>
+              </additionalOperators>
+              <allowedDirections>
+                <AllowedLineDirection id="DE::AllowedLineDirection:7004::" version="1590723027">
+                  <DirectionRef ref="DE::Direction:1::" version="1590723027"/>
+                </AllowedLineDirection>
+                <AllowedLineDirection id="DE::AllowedLineDirection:7005::" version="1590723027">
+                  <DirectionRef ref="DE::Direction:2::" version="1590723027"/>
+                </AllowedLineDirection>
+              </allowedDirections>
+            </Line>
+          </lines>
+          <scheduledStopPoints>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14089301_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.813828</Longitude>
+                <Latitude>50.631083</Latitude>
+              </Location>
+              <ShortName>Zwönitz, Rathausstr | 1</ShortName>
+              <PublicCode>BN</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082702_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.805405</Longitude>
+                <Latitude>50.626206</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Schmiede Lippold | 2</ShortName>
+              <PublicCode>BS</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082801_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.792999</Longitude>
+                <Latitude>50.625491</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Umspannwerk | 1</ShortName>
+              <PublicCode>BO</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082602_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.802447</Longitude>
+                <Latitude>50.622613</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Küchenmöbelwerk | 2</ShortName>
+              <PublicCode>BS</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082402_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.801234</Longitude>
+                <Latitude>50.616904</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Fleischerei Meischner | 2</ShortName>
+              <PublicCode>BS</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082901_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.797747</Longitude>
+                <Latitude>50.611255</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Wendeschleife | 1</ShortName>
+              <PublicCode>BN</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082401_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.801235</Longitude>
+                <Latitude>50.616976</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Fleischerei Meischner | 1</ShortName>
+              <PublicCode>BN</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082601_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.80246</Longitude>
+                <Latitude>50.62255</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Küchenmöbelwerk | 1</ShortName>
+              <PublicCode>BN</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082701_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.806063</Longitude>
+                <Latitude>50.626651</Latitude>
+              </Location>
+              <ShortName>Kühnhaide, Schmiede Lippold | 1</ShortName>
+              <PublicCode>BN</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14090201_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.806401</Longitude>
+                <Latitude>50.630685</Latitude>
+              </Location>
+              <ShortName>Zwönitz, Von-Otto-Str | 1</ShortName>
+              <PublicCode>BN</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="DE::ScheduledStopPoint:14082304_vms_::" version="1590723027">
+              <Location>
+                <Longitude>12.808488</Longitude>
+                <Latitude>50.633736</Latitude>
+              </Location>
+              <ShortName>Zwönitz, Gymnasium | 4</ShortName>
+              <PublicCode>BS</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+          </scheduledStopPoints>
+          <serviceLinks>
+            <ServiceLink id="DE::ServiceLink:1672160__1672091_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082702_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14089301_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672091__1672092_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082801_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082702_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672092__1672089_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082602_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082801_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672089__1672085_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082402_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082602_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672085__1672093_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082901_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082402_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672093__1672084_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082401_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082901_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672084__1672088_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082601_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082401_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672088__1672090_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082701_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082601_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672090__1672161_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14090201_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082701_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672161__1672083_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14082304_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14090201_vms_::" version="1590723027"/>
+            </ServiceLink>
+            <ServiceLink id="DE::ServiceLink:1672083__1672160_::" version="1590723027">
+              <FromPointRef ref="DE::ScheduledStopPoint:14089301_vms_::" version="1590723027"/>
+              <ToPointRef ref="DE::ScheduledStopPoint:14082304_vms_::" version="1590723027"/>
+            </ServiceLink>
+          </serviceLinks>
+          <stopAssignments>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143778::" order="1" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082601_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408260000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082601_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143779::" order="2" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14089301_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:40893_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143780::" order="3" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082702_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408270000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082702_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143781::" order="4" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082401_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408240000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082401_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143782::" order="5" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082801_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408280000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082801_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143783::" order="6" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082602_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408260000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082602_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143784::" order="7" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082901_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408290000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082901_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143785::" order="8" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082402_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408240000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082402_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143786::" order="9" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082701_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408270000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082701_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143787::" order="10" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14090201_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1409020000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14090201_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="DE::PassengerStopAssignment:143788::" order="11" version="1590723027">
+              <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082304_vms_::" version="1590723027"/>
+              <StopPlaceRef ref="DE::StopPlace:1408230000_vms::" version="1590723027"/>
+              <QuayRef ref="DE::Quay:14082304_vms::" version="1590723027"/>
+            </PassengerStopAssignment>
+          </stopAssignments>
+          <journeyPatterns>
+            <ServiceJourneyPattern id="DE::ServiceJourneyPattern:83634864_0::" version="1590723027">
+              <RouteView id="DE::RouteView:83634864_1::">
+                <LineRef ref="DE::Line:1984754::" version="1590723027"/>
+              </RouteView>
+              <DirectionRef ref="DE::Direction:1::" version="1590723027"/>
+              <noticeAssignments>
+                <NoticeAssignment id="DE::NoticeAssignment:180685::" order="1" version="1590723027">
+                  <Notice id="DE::Notice:14700_18742::" version="1590723027">
+                    <Text lang="de">Zahl der Stehplätze : 0</Text>
+                    <PublicCode>NSTAND</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:180686::" order="2" version="1590723027">
+                  <Notice id="DE::Notice:14701_18743::" version="1590723027">
+                    <Text lang="de">Zahl der Sitzplätze : 0</Text>
+                    <PublicCode>NSEAT</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:180687::" order="3" version="1590723027">
+                  <Notice id="DE::Notice:14702_18744::" version="1590723027">
+                    <Text lang="de">Zahl der behindertengerechten Plätze : 0</Text>
+                    <PublicCode>NBEHIN</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:180688::" order="4" version="1590723027">
+                  <Notice id="DE::Notice:12676_18745::" version="1590723027">
+                    <Text lang="de">DELFI-Anreicherungs-URL : http://delfi.vvo-online.de:8080/trias/trias</Text>
+                    <PublicCode>DIPURL</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_5::" version="1590723027"/>
+                </NoticeAssignment>
+              </noticeAssignments>
+              <pointsInSequence>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634864_1_0::" order="1" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14089301_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634864_1_1::" order="2" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082702_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634864_1_2::" order="3" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082801_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634864_1_3::" order="4" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082602_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634864_1_4::" order="5" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082402_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634864_1_5::" order="6" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082901_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+              </pointsInSequence>
+            </ServiceJourneyPattern>
+            <ServiceJourneyPattern id="DE::ServiceJourneyPattern:83634865_0::" version="1590723027">
+              <RouteView id="DE::RouteView:83634865_1::">
+                <LineRef ref="DE::Line:1984754::" version="1590723027"/>
+              </RouteView>
+              <DirectionRef ref="DE::Direction:2::" version="1590723027"/>
+              <noticeAssignments>
+                <NoticeAssignment id="DE::NoticeAssignment:180689::" order="1" version="1590723027">
+                  <NoticeRef ref="DE::Notice:14700_18742::" version="1590723027"/>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_6::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:180690::" order="2" version="1590723027">
+                  <NoticeRef ref="DE::Notice:14701_18743::" version="1590723027"/>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_6::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:180691::" order="3" version="1590723027">
+                  <NoticeRef ref="DE::Notice:14702_18744::" version="1590723027"/>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_6::" version="1590723027"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="DE::NoticeAssignment:180692::" order="4" version="1590723027">
+                  <NoticeRef ref="DE::Notice:12676_18745::" version="1590723027"/>
+                  <StartPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_0::" version="1590723027"/>
+                  <EndPointInPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_6::" version="1590723027"/>
+                </NoticeAssignment>
+              </noticeAssignments>
+              <pointsInSequence>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634865_1_0::" order="1" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082901_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634865_1_1::" order="2" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082401_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634865_1_2::" order="3" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082601_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634865_1_3::" order="4" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082701_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634865_1_4::" order="5" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14090201_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634865_1_5::" order="6" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14082304_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="DE::StopPointInJourneyPattern:83634865_1_6::" order="7" version="1590723027">
+                  <ScheduledStopPointRef ref="DE::ScheduledStopPoint:14089301_vms_::" version="1590723027"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+              </pointsInSequence>
+            </ServiceJourneyPattern>
+          </journeyPatterns>
+        </ServiceFrame>
+        <SiteFrame id="DE::SiteFrame_EU_PI_STOP:vms-RV4-205" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1.0"/>
+          <topographicPlaces>
+            <TopographicPlace id="DE::TopographicPlace:79634::" version="1590723027">
+              <Name>Zwönitz</Name>
+              <IsoCode>14521710</IsoCode>
+              <Descriptor>
+                <Name>Zwönitz</Name>
+              </Descriptor>
+            </TopographicPlace>
+          </topographicPlaces>
+          <stopPlaces>
+            <StopPlace id="DE::StopPlace:40893_vms::" version="1590723027">
+              <Name>Zwönitz, Rathausstr</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.813828</Longitude>
+                  <Latitude>50.631083</Latitude>
+                </Location>
+              </Centroid>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <levels>
+                <Level id="DE::Level:22646532_0::" version="1590723027">
+                  <ShortName>0</ShortName>
+                </Level>
+              </levels>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14089301_vms::" version="1590723027">
+                  <Name>Zwönitz, Rathausstr | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.813828</Longitude>
+                      <Latitude>50.631083</Latitude>
+                    </Location>
+                  </Centroid>
+                  <LevelRef ref="DE::Level:22646532_0::" version="1590723027"/>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40826_vms::" version="1590723027">
+              <Name>Kühnhaide, Küchenmöbelwerk</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.802405</Longitude>
+                  <Latitude>50.622604</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Kühnhaide (Zwönitz) Küchenmöbelwerk</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Zwönitz Küchenmöbelwerk</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1408260000_vms::" version="1590723027">
+              <Name>Kühnhaide, Küchenmöbelwerk</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40826_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14082601_vms::" version="1590723027">
+                  <Name>Kühnhaide, Küchenmöbelwerk | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.80246</Longitude>
+                      <Latitude>50.62255</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="DE::Quay:14082602_vms::" version="1590723027">
+                  <Name>Kühnhaide, Küchenmöbelwerk | 2</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.802447</Longitude>
+                      <Latitude>50.622613</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40827_vms::" version="1590723027">
+              <Name>Kühnhaide, Schmiede Lippold</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.805734</Longitude>
+                  <Latitude>50.626429</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Kühnhaide (Zwönitz) Schmiede Lippold</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Zwönitz Schmiede Lippold</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1408270000_vms::" version="1590723027">
+              <Name>Kühnhaide, Schmiede Lippold</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40827_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14082702_vms::" version="1590723027">
+                  <Name>Kühnhaide, Schmiede Lippold | 2</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.805405</Longitude>
+                      <Latitude>50.626206</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="DE::Quay:14082701_vms::" version="1590723027">
+                  <Name>Kühnhaide, Schmiede Lippold | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.806063</Longitude>
+                      <Latitude>50.626651</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40824_vms::" version="1590723027">
+              <Name>Kühnhaide, Fleischerei Meischner</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.801234</Longitude>
+                  <Latitude>50.616949</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Kühnhaide (Zwönitz) Fleischerei Meischner</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Zwönitz Fleischerei Meischner</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1408240000_vms::" version="1590723027">
+              <Name>Kühnhaide, Fleischerei Meischner</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40824_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14082401_vms::" version="1590723027">
+                  <Name>Kühnhaide, Fleischerei Meischner | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.801235</Longitude>
+                      <Latitude>50.616976</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="DE::Quay:14082402_vms::" version="1590723027">
+                  <Name>Kühnhaide, Fleischerei Meischner | 2</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.801234</Longitude>
+                      <Latitude>50.616904</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40828_vms::" version="1590723027">
+              <Name>Kühnhaide, Umspannwerk</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.792999</Longitude>
+                  <Latitude>50.625491</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Kühnhaide (Zwönitz) Umspannwerk</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Zwönitz Umspannwerk</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1408280000_vms::" version="1590723027">
+              <Name>Kühnhaide, Umspannwerk</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40828_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14082801_vms::" version="1590723027">
+                  <Name>Kühnhaide, Umspannwerk | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.792999</Longitude>
+                      <Latitude>50.625491</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40829_vms::" version="1590723027">
+              <Name>Kühnhaide, Wendeschleife</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.797719</Longitude>
+                  <Latitude>50.611265</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Kühnhaide (Zwönitz) Wendeschleife</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Zwönitz Wendeschleife</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1408290000_vms::" version="1590723027">
+              <Name>Kühnhaide, Wendeschleife</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40829_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14082901_vms::" version="1590723027">
+                  <Name>Kühnhaide, Wendeschleife | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.797747</Longitude>
+                      <Latitude>50.611255</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40902_vms::" version="1590723027">
+              <Name>Zwönitz, Von-Otto-Str</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.806401</Longitude>
+                  <Latitude>50.630712</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Zwönitz Von-Otto-Str</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1409020000_vms::" version="1590723027">
+              <Name>Zwönitz, Von-Otto-Str</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40902_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14090201_vms::" version="1590723027">
+                  <Name>Zwönitz, Von-Otto-Str | 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.806401</Longitude>
+                      <Latitude>50.630685</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:40823_vms::" version="1590723027">
+              <Name>Zwönitz, Gymnasium</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>12.808547</Longitude>
+                  <Latitude>50.633862</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Zwönitz Gymnasium</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+            </StopPlace>
+            <StopPlace id="DE::StopPlace:1408230000_vms::" version="1590723027">
+              <Name>Zwönitz, Gymnasium</Name>
+              <TopographicPlaceRef ref="DE::TopographicPlace:79634::" version="1590723027">Zwönitz</TopographicPlaceRef>
+              <AuthorityRef ref="DE::Authority:189::" version="1590723027"/>
+              <ParentSiteRef ref="DE::StopPlace:40823_vms::" version="1590723027"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="DE::Quay:14082304_vms::" version="1590723027">
+                  <Name>Zwönitz, Gymnasium | 4</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>12.808488</Longitude>
+                      <Latitude>50.633736</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+          </stopPlaces>
+        </SiteFrame>
+        <TimetableFrame id="DE::TimetableFrame_EU_PI_TIMETABLE:vms-RV4-205" version="1590723027">
+          <TypeOfFrameRef ref="epip:EU_PI_TIMETABLE" versionRef="1.0"/>
+          <vehicleJourneys>
+            <ServiceJourney id="DE::ServiceJourney:989751750::" version="1590723027">
+              <TransportMode>bus</TransportMode>
+              <DepartureTime>06:35:00</DepartureTime>
+              <JourneyDuration>PT10M</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="DE::DayType:18695::" version="1590723027"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="DE::ServiceJourneyPattern:83634864_0::" version="1590723027"/>
+              <VehicleTypeRef ref="DE::VehicleType:2973::" version="1590723027"/>
+              <passingTimes>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212878::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_0::" version="1590723027"/>
+                  <DepartureTime>06:35:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212879::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_1::" version="1590723027"/>
+                  <ArrivalTime>06:38:00</ArrivalTime>
+                  <DepartureTime>06:38:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212880::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_2::" version="1590723027"/>
+                  <ArrivalTime>06:40:00</ArrivalTime>
+                  <DepartureTime>06:40:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212881::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_3::" version="1590723027"/>
+                  <ArrivalTime>06:42:00</ArrivalTime>
+                  <DepartureTime>06:42:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212882::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_4::" version="1590723027"/>
+                  <ArrivalTime>06:43:00</ArrivalTime>
+                  <DepartureTime>06:43:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212883::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634864_1_5::" version="1590723027"/>
+                  <ArrivalTime>06:45:00</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+            <ServiceJourney id="DE::ServiceJourney:989751749::" version="1590723027">
+              <TransportMode>bus</TransportMode>
+              <DepartureTime>06:45:00</DepartureTime>
+              <JourneyDuration>PT13M</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="DE::DayType:18695::" version="1590723027"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="DE::ServiceJourneyPattern:83634865_0::" version="1590723027"/>
+              <VehicleTypeRef ref="DE::VehicleType:2973::" version="1590723027"/>
+              <passingTimes>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212884::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_0::" version="1590723027"/>
+                  <DepartureTime>06:45:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212885::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_1::" version="1590723027"/>
+                  <ArrivalTime>06:47:00</ArrivalTime>
+                  <DepartureTime>06:47:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212886::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_2::" version="1590723027"/>
+                  <ArrivalTime>06:48:00</ArrivalTime>
+                  <DepartureTime>06:48:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212887::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_3::" version="1590723027"/>
+                  <ArrivalTime>06:50:00</ArrivalTime>
+                  <DepartureTime>06:50:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212888::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_4::" version="1590723027"/>
+                  <ArrivalTime>06:52:00</ArrivalTime>
+                  <DepartureTime>06:52:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212889::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_5::" version="1590723027"/>
+                  <ArrivalTime>06:53:00</ArrivalTime>
+                  <DepartureTime>06:53:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="DE::TimetabledPassingTime:4212890::" version="1590723027">
+                  <StopPointInJourneyPatternRef ref="DE::StopPointInJourneyPattern:83634865_1_6::" version="1590723027"/>
+                  <ArrivalTime>06:58:00</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+          </vehicleJourneys>
+          <vehicleTypes>
+            <VehicleType id="DE::VehicleType:2973::" version="1590723027">
+              <Name>Bus</Name>
+            </VehicleType>
+          </vehicleTypes>
+        </TimetableFrame>
+      </frames>
+    </CompositeFrame>
+  </dataObjects>
+
+</PublicationDelivery>
